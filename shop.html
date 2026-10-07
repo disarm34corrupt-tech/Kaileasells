@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — KaileaSell</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announcement">PRELOVED BY LEA · EVERYTHING IS FOR SALE · NO REGRETS</div>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">
+    <span class="logo-main">KaileaSell</span>
+    <span class="logo-sub">preloved by lea</span>
+  </a>
+  <div class="nav-links">
+    <a href="shop.html">SHOP</a>
+    <a href="index.html#about">ABOUT LEA</a>
+    <a href="index.html#how">HOW IT WORKS</a>
+  </div>
+  <button class="bag-button" type="button">BAG <span id="bagCount">0</span></button>
+</nav>
+
+<main>
+<section id="shop" class="shop-section">
+
+  <div class="shop-heading">
+    <div>
+      <div class="section-label">THE CLOSET</div>
+      <h2>Shop the mess.</h2>
+    </div>
+    <div id="productCount">29 PIECES AVAILABLE</div>
+  </div>
+
+  <div class="shop-controls">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Lea's closet...">
+    </div>
+    <div class="filter-buttons">
+      <button class="filter active" data-category="all">ALL</button>
+      <button class="filter" data-category="bags">BAGS</button>
+      <button class="filter" data-category="clothing">FASHION</button>
+      <button class="filter" data-category="shoes">SHOES</button>
+      <button class="filter" data-category="accessories">ACCESSORIES</button>
+      <button class="filter" data-category="other">OTHER</button>
+    </div>
+  </div>
+
+  <div id="productGrid"></div>
+
+  <div id="emptyState" style="display:none;">
+    <h3>Nothing here, babe.</h3>
+    <p>Try another search. Lea probably owns something else.</p>
+  </div>
+
+</section>
+</main>
+
+<footer class="footer">
+  <div>
+    <div class="footer-logo">KaileaSell</div>
+    <p>Pretty things. Wrong decisions.</p>
+  </div>
+  <div class="footer-right">© 2026 KAILEASELL<br>MADE BY LEA, APPARENTLY.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

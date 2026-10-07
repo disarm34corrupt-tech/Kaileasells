@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaileaSell — Preloved by Lea</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announcement">PRELOVED BY LEA · EVERYTHING IS FOR SALE · NO REGRETS</div>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">
+    <span class="logo-main">KaileaSell</span>
+    <span class="logo-sub">preloved by lea</span>
+  </a>
+  <div class="nav-links">
+    <a href="shop.html">SHOP</a>
+    <a href="#about">ABOUT LEA</a>
+    <a href="#how">HOW IT WORKS</a>
+  </div>
+  <a href="shop.html?bag=1" class="bag-button">BAG <span id="bagCount">0</span></a>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="hero-kicker">WELCOME TO LEA'S CLOSET ✦</div>
+    <h1>Pretty things.<br><em>Wrong decisions.</em></h1>
+    <p class="hero-description">
+      Things Lea bought, wore once, got bored of, didn't fit, or simply
+      decided she doesn't want anymore. Your gain, her loss.
+    </p>
+    <div class="hero-buttons">
+      <a href="shop.html" class="primary-button">SHOP THE CLOSET</a>
+      <a href="#about" class="secondary-button">MEET LEA</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-card-inner">
+      <span>if I don't<br>wear it,<br><em>you should.</em></span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>PRELOVED BY LEA</span><span>PRETTY THINGS</span><span>WRONG DECISIONS</span><span>EVERYTHING MUST GO</span>
+    <span>PRELOVED BY LEA</span><span>PRETTY THINGS</span><span>WRONG DECISIONS</span><span>EVERYTHING MUST GO</span>
+  </div>
+</div>
+
+<section id="about" class="about-section">
+  <div>
+    <div class="about-label">MEET THE SELLER</div>
+    <h2>Hi,<br>I'm Lea.</h2>
+  </div>
+  <div class="about-copy">
+    <p><strong>Jan Wisesa Kailea Adiningrum</strong> — although honestly, just call me Lea. I'm a freelance model, a little spoiled, and very easily convinced that I absolutely need something just because it's pretty.</p>
+    <p>I like dressing up, pretty bags, pink things, expensive little objects, and buying things for very specific occasions that somehow never happen again. Most of these pieces have been part of a shoot, an event, a trip, an endorsement, or one of those “I deserve this” moments. Some I loved, some I barely wore, and some I bought simply because I was bored.</p>
+    <p>Eventually, my closet started looking less like a closet and more like a storage unit with better lighting. So here we are.</p>
+    <p>Everything on KaileaSell has a story. I'm just ready for someone else to continue it.</p>
+    <p>Still curious about me? Catch me on X where I overshare, complain about my closet, and occasionally make another questionable purchase.</p>
+    <p><a class="about-handle" href="https://x.com/junrnals" target="_blank" rel="noopener">@junrnals</a> — you know where to find me. 🎀</p>
+    <div class="about-signature">— Lea ♡</div>
+  </div>
+</section>
+
+<section id="how" class="how-section">
+  <div class="how-heading">
+    <div class="section-label">BEFORE YOU BUY</div>
+    <h2>How it works.</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-item">
+      <div class="how-number">01</div>
+      <h3>Pick a thing.</h3>
+      <p>Browse Lea's closet and find something you absolutely don't need but definitely want.</p>
+    </div>
+    <div class="how-item">
+      <div class="how-number">02</div>
+      <h3>Add it to your bag.</h3>
+      <p>Add your favourites to the shopping bag. No judgement here.</p>
+    </div>
+    <div class="how-item">
+      <div class="how-number">03</div>
+      <h3>Check out.</h3>
+      <p>Pay with pretend money, get your very serious KaileaSell receipt, then post it on X and tag @junrnals.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Ready to make a<br><em>questionable decision?</em></h2>
+  <a href="shop.html" class="primary-button">ENTER THE CLOSET →</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div>
+    <div class="footer-logo">KaileaSell</div>
+    <p>Pretty things. Wrong decisions.</p>
+  </div>
+  <div class="footer-right">© 2026 KAILEASELL<br>MADE BY LEA, APPARENTLY.</div>
+</footer>
+
+<script>
+  // Tampilkan jumlah isi bag (disimpan dari halaman shop)
+  try {
+    var saved = JSON.parse(localStorage.getItem("kaileasell_bag") || "[]");
+    document.getElementById("bagCount").textContent = saved.length;
+  } catch (e) {}
+</script>
+</body>
+</html>
