@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+/* =========================================================
+   KAILEASELL
+   PRELOVED BY LEA
+   FULL CSS — CLEAN VERSION
+========================================================= */
+
 
 /* =========================================================
-   KAILEASELL — COMPLETE STYLE
-   Y2K GIRLY / FASHION EDITORIAL / PRELOVED CLOSET
+   01. ROOT
 ========================================================= */
 
 :root {
@@ -11,18 +15,18 @@
   --blush: #d58a9f;
   --blue: #d6e6fd;
   --denim: #4a4f87;
+
   --ink: #17151b;
   --paper: #fffafc;
   --white: #ffffff;
   --muted: #77717a;
-  --line: #17151b;
 
-  --sans: "DM Sans", Arial, sans-serif;
-  --serif: "Playfair Display", Georgia, serif;
+  --line: #17151b;
 }
 
+
 /* =========================================================
-   RESET
+   02. RESET
 ========================================================= */
 
 * {
@@ -36,9 +40,15 @@ html {
 body {
   margin: 0;
   padding: 0;
+
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--sans);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   -webkit-font-smoothing: antialiased;
 }
 
@@ -61,113 +71,159 @@ a {
   color: inherit;
 }
 
+
 /* =========================================================
-   ANNOUNCEMENT
+   03. ANNOUNCEMENT
 ========================================================= */
 
 .announcement {
   width: 100%;
+
   padding: 9px 20px;
+
   background: var(--ink);
   color: var(--paper);
+
   text-align: center;
+
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .16em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
+
 /* =========================================================
-   NAVBAR
+   04. NAVBAR
 ========================================================= */
 
 .navbar {
   position: relative;
   z-index: 100;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   width: 100%;
+
   padding: 18px 5vw;
+
   background: var(--paper);
-  border-bottom: 1px solid var(--ink);
+
+  border-bottom: 1px solid var(--line);
 }
 
 .logo {
   display: flex;
   flex-direction: column;
+
+  color: var(--ink);
+
   text-decoration: none;
-  line-height: .85;
+
+  line-height: 0.85;
 }
 
 .logo-main {
   font-size: 25px;
   font-weight: 900;
-  letter-spacing: -.07em;
+
+  letter-spacing: -0.07em;
 }
 
 .logo-sub {
   margin-top: 7px;
+
   font-size: 8px;
   font-weight: 700;
-  letter-spacing: .18em;
+
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
+
   gap: 30px;
 }
 
 .nav-links a {
   position: relative;
+
+  color: var(--ink);
+
   text-decoration: none;
+
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: .08em;
+
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .nav-links a::after {
   content: "";
+
   position: absolute;
+
   left: 0;
   bottom: -5px;
+
   width: 0;
   height: 1px;
+
   background: var(--ink);
-  transition: width .2s ease;
+
+  transition: width 0.2s ease;
 }
 
 .nav-links a:hover::after {
   width: 100%;
 }
 
-/* BAG BUTTON */
+
+/* =========================================================
+   BAG BUTTON
+========================================================= */
 
 .bag-button {
   position: relative;
   z-index: 101;
+
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+
   gap: 7px;
+
   padding: 9px 14px;
+
   background: var(--pink);
   color: var(--ink);
+
   border: 1px solid var(--ink);
   border-radius: 999px;
+
   font-size: 10px;
   font-weight: 900;
-  letter-spacing: .08em;
+
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  cursor: pointer;
+
   text-decoration: none;
-  transition: transform .2s ease, box-shadow .2s ease;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .bag-button:hover {
   transform: translate(-2px, -2px);
+
   box-shadow: 3px 3px 0 var(--ink);
 }
 
@@ -175,145 +231,127 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   min-width: 17px;
   height: 17px;
+
   padding: 0 5px;
+
   background: var(--ink);
   color: var(--paper);
+
   border-radius: 50%;
+
   font-size: 9px;
 }
 
+
 /* =========================================================
-   LANDING PAGE — HERO
+   05. HERO
 ========================================================= */
 
 .hero {
   position: relative;
+
   display: grid;
-  grid-template-columns: 1.15fr .85fr;
+
+  grid-template-columns: 1.15fr 0.85fr;
+
   align-items: center;
+
   min-height: 720px;
+
   padding: 90px 7vw;
+
   background: var(--pink);
+
   overflow: hidden;
 }
 
 .hero::before {
   content: "PRELOVED BY LEA";
+
   position: absolute;
+
   top: 32px;
   right: 6vw;
+
   font-size: 10px;
   font-weight: 900;
-  letter-spacing: .2em;
-  opacity: .5;
+
+  letter-spacing: 0.2em;
+
+  opacity: 0.5;
 }
 
 .hero-copy {
   position: relative;
   z-index: 2;
+
   max-width: 700px;
 }
 
 .hero-kicker {
   display: inline-block;
+
   margin-bottom: 25px;
+
   padding: 8px 13px;
+
   background: var(--paper);
+
   border: 1px solid var(--ink);
   border-radius: 999px;
+
   font-size: 10px;
   font-weight: 900;
-  letter-spacing: .14em;
+
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .hero h1 {
   margin: 0;
+
   max-width: 850px;
+
   font-size: clamp(65px, 10vw, 150px);
-  font-weight: 900;
-  line-height: .78;
-  letter-spacing: -.075em;
+
+  line-height: 0.78;
+
+  letter-spacing: -0.075em;
+
   text-transform: uppercase;
 }
 
 .hero h1 em {
-  font-family: var(--serif);
-  font-weight: 500;
-  text-transform: none;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-weight: 400;
 }
 
 .hero-description {
   max-width: 570px;
+
   margin: 35px 0 0;
+
   font-size: 17px;
+
   line-height: 1.65;
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
+
   gap: 12px;
+
   margin-top: 35px;
 }
 
-/* HERO CARD */
-
-.hero-card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 460px;
-}
-
-.hero-card::before {
-  content: "01";
-  position: absolute;
-  top: 5%;
-  right: 8%;
-  font-size: 90px;
-  font-weight: 900;
-  letter-spacing: -.08em;
-  opacity: .08;
-}
-
-.hero-card-inner {
-  position: relative;
-  width: min(380px, 90%);
-  aspect-ratio: .78;
-  background: var(--paper);
-  border: 1px solid var(--ink);
-  box-shadow: 15px 15px 0 var(--ink);
-  transform: rotate(4deg);
-  overflow: hidden;
-}
-
-.hero-card-inner::before {
-  content: "LEA'S CLOSET";
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 2;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: .15em;
-}
-
-.hero-card-inner::after {
-  content: "pretty things.\A wrong decisions.";
-  white-space: pre;
-  position: absolute;
-  left: 20px;
-  bottom: 22px;
-  z-index: 2;
-  font-family: var(--serif);
-  font-size: 27px;
-  line-height: .95;
-  font-style: italic;
-}
 
 /* =========================================================
    BUTTONS
@@ -322,17 +360,28 @@ a {
 .primary-button,
 .secondary-button {
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
+
   min-height: 46px;
+
   padding: 0 20px;
+
   border: 1px solid var(--ink);
+
   text-decoration: none;
+
   font-size: 10px;
   font-weight: 900;
-  letter-spacing: .1em;
+
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition: transform .2s ease, box-shadow .2s ease;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 .primary-button {
@@ -343,4 +392,2061 @@ a {
 .secondary-button {
   background: transparent;
   color: var(--ink);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+
+/* =========================================================
+   HERO CARD
+========================================================= */
+
+.hero-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 460px;
+}
+
+.hero-card::before {
+  content: "01";
+
+  position: absolute;
+
+  top: 5%;
+  right: 8%;
+
+  font-size: 90px;
+  font-weight: 900;
+
+  letter-spacing: -0.08em;
+
+  opacity: 0.08;
+}
+
+.hero-card-inner {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: min(380px, 90%);
+
+  aspect-ratio: 0.78;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  box-shadow: 15px 15px 0 var(--ink);
+
+  transform: rotate(4deg);
+
+  overflow: hidden;
+}
+
+.hero-card-inner::before {
+  content: "LEA'S CLOSET";
+
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+.hero-card-inner::after {
+  content: "pretty things.\A wrong decisions.";
+
+  white-space: pre;
+
+  position: absolute;
+
+  left: 20px;
+  bottom: 22px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 27px;
+
+  line-height: 0.95;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   06. MARQUEE
+========================================================= */
+
+.marquee {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: var(--green);
+
+  border-bottom: 1px solid var(--ink);
+
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-flex;
+
+  padding: 14px 0;
+
+  animation: marqueeMove 25s linear infinite;
+}
+
+.marquee-track span {
+  margin-right: 40px;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* =========================================================
+   07. SHOP
+========================================================= */
+
+.shop-section {
+  padding: 100px 5vw;
+
+  background: var(--paper);
+}
+
+.shop-heading {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.shop-heading h2 {
+  margin: 0;
+
+  font-size: clamp(45px, 7vw, 90px);
+
+  line-height: 0.85;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+#productCount {
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   SHOP CONTROLS
+========================================================= */
+
+.shop-controls {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 35px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid var(--ink);
+}
+
+.search-box {
+  width: min(330px, 100%);
+}
+
+.search-box input {
+  width: 100%;
+
+  height: 43px;
+
+  padding: 0 15px;
+
+  background: transparent;
+
+  border: 1px solid var(--ink);
+
+  outline: none;
+
+  font-size: 12px;
+}
+
+.search-box input:focus {
+  background: var(--blue);
+}
+
+.filter-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.filter {
+  padding: 9px 13px;
+
+  background: transparent;
+
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.filter:hover,
+.filter.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+#productGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.product-card {
+  position: relative;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translate(-4px, -4px);
+
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.product-image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 0.9;
+
+  background: #f3edf1;
+
+  overflow: hidden;
+}
+
+.product-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.product-condition {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  padding: 6px 8px;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   PRODUCT INFO
+========================================================= */
+
+.product-info {
+  padding: 16px;
+}
+
+.product-brand {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  opacity: 0.55;
+}
+
+.product-name {
+  min-height: 42px;
+
+  margin: 0 0 10px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+.product-price {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.product-tag {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 5px 7px;
+
+  background: var(--pink);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   EMPTY SEARCH
+========================================================= */
+
+#emptyState {
+  display: none;
+
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+#emptyState h3 {
+  margin: 0 0 10px;
+
+  font-size: 35px;
+
+  letter-spacing: -0.05em;
+}
+
+#emptyState p {
+  margin: 0;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   08. ABOUT LEA
+========================================================= */
+
+.about-section {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 70px;
+
+  padding: 120px 6vw;
+
+  background: var(--pink);
+
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: "KAILEASELL / ABOUT";
+
+  position: absolute;
+
+  top: 28px;
+  left: 6vw;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 0.18em;
+
+  opacity: 0.5;
+}
+
+.about-section::after {
+  content: "♡";
+
+  position: absolute;
+
+  right: 5vw;
+  bottom: 20px;
+
+  font-family: Georgia, serif;
+
+  font-size: 150px;
+
+  opacity: 0.08;
+
+  transform: rotate(-12deg);
+}
+
+.about-section > div {
+  position: relative;
+  z-index: 2;
+}
+
+.about-label {
+  display: inline-block;
+
+  margin-bottom: 25px;
+
+  padding: 8px 15px;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+.about-section h2 {
+  margin: 0;
+
+  font-size: clamp(55px, 8vw, 110px);
+
+  line-height: 0.82;
+
+  letter-spacing: -0.07em;
+}
+
+.about-copy {
+  max-width: 620px;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.about-copy p {
+  margin: 0 0 22px;
+}
+
+.about-copy strong {
+  font-weight: 900;
+}
+
+.about-handle {
+  font-weight: 900;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--ink);
+
+  transition: background 0.2s ease;
+}
+
+.about-handle:hover {
+  background: var(--paper);
+}
+
+.about-signature {
+  margin-top: 35px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 25px;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   09. HOW IT WORKS
+========================================================= */
+
+.how-section {
+  padding: 100px 5vw;
+
+  background: var(--blue);
+
+  border-bottom: 1px solid var(--ink);
+}
+
+.how-heading {
+  max-width: 1200px;
+
+  margin: 0 auto 50px;
+}
+
+.how-heading h2 {
+  margin: 0;
+
+  font-size: clamp(45px, 7vw, 85px);
+
+  line-height: 0.85;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.how-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.how-item {
+  min-height: 260px;
+
+  padding: 25px;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.how-item:hover {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.how-number {
+  display: block;
+
+  margin-bottom: 60px;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+.how-item h3 {
+  margin: 0 0 10px;
+
+  font-size: 25px;
+
+  letter-spacing: -0.04em;
+}
+
+.how-item p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   10. CTA
+========================================================= */
+
+.cta-section {
+  padding: 120px 5vw;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      var(--pink) 0,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      var(--blue) 0,
+      transparent 30%
+    ),
+    var(--paper);
+}
+
+.cta-section h2 {
+  margin: 0 0 36px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(44px, 6vw, 84px);
+
+  font-weight: 500;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.04em;
+}
+
+.cta-section h2 em {
+  color: var(--denim);
+}
+
+
+/* =========================================================
+   11. FOOTER
+========================================================= */
+
+.footer {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 70px 5vw 30px;
+
+  background: var(--ink);
+
+  color: var(--paper);
+}
+
+.footer-logo {
+  font-size: clamp(45px, 8vw, 90px);
+
+  font-weight: 900;
+
+  line-height: 0.8;
+
+  letter-spacing: -0.07em;
+}
+
+.footer p {
+  margin: 15px 0 0;
+
+  font-size: 11px;
+
+  opacity: 0.65;
+}
+
+.footer-right {
+  font-size: 9px;
+
+  font-weight: 700;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.1em;
+
+  text-align: right;
+
+  opacity: 0.55;
+}
+
+
+/* =========================================================
+   12. PRODUCT DETAIL MODAL
+========================================================= */
+
+.product-modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2000;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(23, 21, 27, 0.68);
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.product-modal.active {
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: absolute;
+
+  inset: 0;
+}
+
+
+/* =========================================================
+   MODAL CARD
+========================================================= */
+
+.modal-card {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(900px, 92vw);
+
+  max-height: 88vh;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  box-shadow: 10px 10px 0 var(--pink);
+
+  overflow: hidden;
+
+  animation: modalPop 0.25s ease;
+}
+
+.modal-card:not(.single) {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(12px)
+      scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* =========================================================
+   MODAL CLOSE
+========================================================= */
+
+.modal-close {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  z-index: 20;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  border-radius: 50%;
+
+  color: var(--ink);
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.modal-close:hover {
+  background: var(--pink);
+
+  transform: rotate(8deg);
+}
+
+
+/* =========================================================
+   MODAL IMAGE
+========================================================= */
+
+.modal-image {
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 540px;
+
+  background: #f2ecef;
+
+  overflow: hidden;
+}
+
+.modal-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   MODAL INFO
+========================================================= */
+
+.modal-info {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-width: 0;
+  min-height: 0;
+
+  padding: 48px 42px;
+
+  overflow-y: auto;
+}
+
+.modal-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  opacity: 0.5;
+}
+
+.modal-info h2 {
+  margin: 0 0 18px;
+
+  font-size: clamp(32px, 4vw, 52px);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.06em;
+}
+
+.modal-price {
+  margin-bottom: 15px;
+
+  font-size: 18px;
+
+  font-weight: 900;
+}
+
+.modal-condition {
+  align-self: flex-start;
+
+  margin-bottom: 28px;
+
+  padding: 7px 10px;
+
+  background: var(--green);
+
+  border: 1px solid var(--ink);
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+.modal-note {
+  margin-bottom: 30px;
+}
+
+.modal-note small {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.modal-note p {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   ADD TO BAG
+========================================================= */
+
+.add-bag-button {
+  width: 100%;
+
+  min-height: 52px;
+
+  padding: 14px 20px;
+
+  background: var(--ink);
+
+  color: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.11em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.add-bag-button:hover {
+  background: var(--pink);
+
+  color: var(--ink);
+
+  transform: translate(-3px, -3px);
+
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+
+/* =========================================================
+   13. BAG DRAWER
+========================================================= */
+
+#overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 900;
+
+  background: rgba(23, 21, 27, 0.45);
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+#overlay.active {
+  opacity: 1;
+
+  visibility: visible;
+}
+
+#bagDrawer {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  z-index: 1000;
+
+  display: flex;
+
+  flex-direction: column;
+
+  width: min(460px, 92vw);
+
+  height: 100vh;
+
+  background: var(--paper);
+
+  border-left: 1px solid var(--ink);
+
+  transform: translateX(100%);
+
+  transition: transform 0.35s ease;
+}
+
+#bagDrawer.active {
+  transform: translateX(0);
+}
+
+.bag-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 22px;
+
+  border-bottom: 1px solid var(--ink);
+}
+
+.bag-header .section-label {
+  margin-bottom: 5px;
+
+  font-size: 8px;
+}
+
+.bag-header h2 {
+  margin: 0;
+
+  font-size: 32px;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.06em;
+}
+
+#bagClose {
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  border-radius: 50%;
+
+  font-size: 20px;
+
+  line-height: 1;
+}
+
+#bagItems {
+  flex: 1;
+
+  padding: 20px;
+
+  overflow-y: auto;
+}
+
+
+/* =========================================================
+   BAG ITEMS
+========================================================= */
+
+.bag-item {
+  display: grid;
+
+  grid-template-columns: 85px 1fr;
+
+  gap: 14px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #ddd6da;
+}
+
+.bag-item > img {
+  width: 85px;
+  height: 95px;
+
+  background: #f1ebef;
+
+  object-fit: cover;
+}
+
+.bag-item-info > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+
+  opacity: 0.5;
+}
+
+.bag-item-info h4 {
+  margin: 0 0 8px;
+
+  font-size: 12px;
+
+  line-height: 1.25;
+}
+
+.bag-item-info strong {
+  font-size: 11px;
+}
+
+.remove-item {
+  display: block;
+
+  margin-top: 10px;
+
+  padding: 0;
+
+  background: none;
+
+  border: 0;
+
+  color: var(--ink);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   EMPTY BAG
+========================================================= */
+
+.empty-bag {
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.empty-bag-icon {
+  margin-bottom: 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+}
+
+.empty-bag h3 {
+  margin: 0 0 8px;
+
+  font-size: 25px;
+
+  letter-spacing: -0.04em;
+}
+
+.empty-bag p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   BAG FOOTER
+========================================================= */
+
+.bag-footer {
+  padding: 20px;
+
+  border-top: 1px solid var(--ink);
+}
+
+.bag-total-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  font-size: 11px;
+
+  font-weight: 900;
+}
+
+.bag-disclaimer {
+  margin: 0 0 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 12px;
+
+  font-style: italic;
+
+  opacity: 0.6;
+}
+
+.bag-footer .primary-button {
+  width: 100%;
+
+  min-height: 50px;
+}
+
+.bag-footer .primary-button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   14. CHECKOUT
+========================================================= */
+
+.modal-card.single {
+  width: min(650px, 92vw);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+}
+
+.checkout-wrap {
+  padding: 45px;
+}
+
+.checkout-wrap h2 {
+  margin: 8px 0 12px;
+
+  font-size: clamp(42px, 6vw, 70px);
+
+  line-height: 0.85;
+
+  letter-spacing: -0.06em;
+}
+
+.fiction-note {
+  max-width: 530px;
+
+  margin: 0 0 30px;
+
+  font-family: Georgia, serif;
+
+  font-size: 13px;
+
+  font-style: italic;
+
+  line-height: 1.5;
+
+  opacity: 0.65;
+}
+
+#checkoutForm label {
+  display: block;
+
+  margin-bottom: 17px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+#checkoutForm input[type="text"] {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 7px;
+
+  padding: 13px;
+
+  background: transparent;
+
+  border: 1px solid var(--ink);
+
+  outline: none;
+
+  font-size: 12px;
+}
+
+#checkoutForm input[type="text"]:focus {
+  background: var(--blue);
+}
+
+#checkoutForm h3 {
+  margin: 28px 0 12px;
+
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   PAYMENT OPTIONS
+========================================================= */
+
+.payment-options {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+.payment-option {
+  margin: 0 !important;
+
+  padding: 14px !important;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  cursor: pointer;
+}
+
+.payment-option input {
+  display: none;
+}
+
+.payment-option span {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.payment-option strong {
+  font-size: 9px;
+}
+
+.payment-option small {
+  font-size: 8px;
+
+  font-weight: 400;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+
+  opacity: 0.55;
+}
+
+.payment-option:has(input:checked) {
+  background: var(--green);
+}
+
+#checkoutForm .bag-total-row {
+  margin: 20px 0;
+}
+
+
+/* =========================================================
+   15. RECEIPT
+========================================================= */
+
+.receipt-wrap {
+  padding: 35px;
+}
+
+#receiptCard {
+  padding: 30px;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  box-shadow: 7px 7px 0 var(--pink);
+}
+
+.r-top {
+  padding-bottom: 20px;
+
+  text-align: center;
+
+  border-bottom: 1px dashed var(--ink);
+}
+
+.r-logo {
+  font-size: 38px;
+
+  font-weight: 900;
+
+  letter-spacing: -0.07em;
+}
+
+.r-sub {
+  margin-top: 5px;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+.r-meta {
+  display: grid;
+
+  gap: 5px;
+
+  padding: 20px 0;
+
+  font-size: 9px;
+
+  line-height: 1.4;
+}
+
+.r-line {
+  border-top: 1px dashed var(--ink);
+}
+
+.r-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 10px 0;
+
+  font-size: 10px;
+}
+
+.r-total {
+  font-weight: 900;
+}
+
+.r-foot {
+  margin: 20px 0 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 12px;
+
+  font-style: italic;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+.r-stamp {
+  margin-top: 20px;
+
+  padding: 8px;
+
+  border: 1px solid var(--ink);
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   RECEIPT ACTIONS
+========================================================= */
+
+.receipt-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+.receipt-actions .secondary-button {
+  min-height: 50px;
+}
+
+.receipt-hint {
+  grid-column: 1 / -1;
+
+  margin: 8px 0 0;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  opacity: 0.6;
+}
+
+#receiptPreview img {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 15px;
+}
+
+
+/* =========================================================
+   16. TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    gap: 70px;
+
+    padding-top: 80px;
+
+    padding-bottom: 100px;
+  }
+
+  .hero-card {
+    min-height: 400px;
+  }
+
+  #productGrid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .shop-controls {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .modal-image {
+    min-height: 470px;
+  }
+}
+
+
+/* =========================================================
+   17. MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /* ---------- NAVBAR ---------- */
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo-main {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    gap: 13px;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  .bag-button {
+    padding: 8px 11px;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    padding: 70px 24px 85px;
+
+    gap: 55px;
+  }
+
+  .hero::before {
+    top: 20px;
+
+    right: 24px;
+
+    font-size: 8px;
+  }
+
+  .hero h1 {
+    font-size:
+      clamp(58px, 17vw, 90px);
+  }
+
+  .hero-description {
+    margin-top: 28px;
+
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    margin-top: 28px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    min-height: 43px;
+
+    padding: 0 15px;
+  }
+
+  .hero-card {
+    min-height: 360px;
+  }
+
+  .hero-card-inner {
+    width: min(290px, 82%);
+
+    box-shadow: 10px 10px 0 var(--ink);
+  }
+
+
+  /* ---------- SHOP ---------- */
+
+  .shop-section {
+    padding: 75px 20px;
+  }
+
+  .shop-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+  }
+
+  .shop-heading h2 {
+    font-size:
+      clamp(48px, 15vw, 75px);
+  }
+
+  #productGrid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+  .product-info {
+    padding: 12px;
+  }
+
+  .product-name {
+    min-height: 38px;
+
+    font-size: 12px;
+  }
+
+  .product-price {
+    font-size: 12px;
+  }
+
+  .product-tag {
+    font-size: 7px;
+  }
+
+
+  /* ---------- ABOUT ---------- */
+
+  .about-section {
+    display: block;
+
+    padding: 85px 24px;
+  }
+
+  .about-section > div {
+    margin-bottom: 35px;
+  }
+
+  .about-section > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-section::before {
+    top: 20px;
+
+    left: 24px;
+
+    font-size: 8px;
+  }
+
+  .about-section::after {
+    right: 5px;
+
+    bottom: 10px;
+
+    font-size: 90px;
+  }
+
+  .about-section h2 {
+    font-size:
+      clamp(55px, 15vw, 80px);
+  }
+
+  .about-copy {
+    max-width: 100%;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+
+  /* ---------- HOW ---------- */
+
+  .how-section {
+    padding: 75px 20px;
+  }
+
+  .how-heading {
+    margin-bottom: 35px;
+  }
+
+  .how-heading h2 {
+    font-size:
+      clamp(48px, 15vw, 75px);
+  }
+
+  .how-grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .how-item {
+    min-height: 200px;
+  }
+
+  .how-number {
+    margin-bottom: 40px;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .cta-section {
+    padding: 85px 24px;
+  }
+
+  .cta-section h2 {
+    font-size:
+      clamp(42px, 12vw, 65px);
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  .footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    padding: 60px 20px 25px;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+
+
+  /* =====================================================
+     PRODUCT MODAL
+  ===================================================== */
+
+  .product-modal {
+    padding: 10px;
+  }
+
+  .modal-card:not(.single) {
+    display: block;
+
+    width: 94vw;
+
+    max-height: 94vh;
+
+    overflow-y: auto;
+  }
+
+  .modal-image {
+    width: 100%;
+
+    height: 42vh;
+
+    min-height: 260px;
+
+    max-height: 360px;
+  }
+
+  .modal-info {
+    padding: 27px 22px 25px;
+
+    overflow: visible;
+  }
+
+  .modal-info h2 {
+    font-size: 38px;
+  }
+
+  .modal-note p {
+    font-size: 15px;
+  }
+
+
+  /* =====================================================
+     BAG
+  ===================================================== */
+
+  #bagDrawer {
+    width: 100%;
+  }
+
+
+  /* =====================================================
+     CHECKOUT
+  ===================================================== */
+
+  .modal-card.single {
+    width: 94vw;
+
+    max-height: 92vh;
+  }
+
+  .checkout-wrap {
+    padding: 28px 20px;
+  }
+
+  .checkout-wrap h2 {
+    font-size: 43px;
+  }
+
+  .payment-options {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* =====================================================
+     RECEIPT
+  ===================================================== */
+
+  .receipt-wrap {
+    padding: 20px;
+  }
+
+  #receiptCard {
+    padding: 22px;
+
+    box-shadow: 5px 5px 0 var(--pink);
+  }
+
+  .receipt-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .receipt-hint {
+    grid-column: auto;
+  }
+}
+
+
+/* =========================================================
+   18. VERY SMALL PHONE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .hero h1 {
+    font-size: 56px;
+  }
+
+  #productGrid {
+    gap: 7px;
+  }
+
+  .product-info {
+    padding: 9px;
+  }
+
+  .product-name {
+    font-size: 11px;
+  }
+
+  .product-price {
+    font-size: 11px;
+  }
+
+  .about-section h2 {
+    font-size: 48px;
+  }
 }
