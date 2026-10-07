@@ -1,11 +1,12 @@
 /* =========================================================
-   KAILEASELL — FULL STYLE
-   Y2K GIRLY / PRELOVED CLOSET / EDITORIAL
+   KAILEASELL
+   PRELOVED BY LEA
+   FULL CSS — CLEAN VERSION
 ========================================================= */
 
 
 /* =========================================================
-   01. ROOT & RESET
+   01. ROOT
 ========================================================= */
 
 :root {
@@ -14,12 +15,19 @@
   --blush: #d58a9f;
   --blue: #d6e6fd;
   --denim: #4a4f87;
+
   --ink: #17151b;
   --paper: #fffafc;
   --white: #ffffff;
   --muted: #77717a;
+
   --line: #17151b;
 }
+
+
+/* =========================================================
+   02. RESET
+========================================================= */
 
 * {
   box-sizing: border-box;
@@ -65,11 +73,12 @@ a {
 
 
 /* =========================================================
-   02. ANNOUNCEMENT BAR
+   03. ANNOUNCEMENT
 ========================================================= */
 
 .announcement {
   width: 100%;
+
   padding: 9px 20px;
 
   background: var(--ink);
@@ -85,7 +94,7 @@ a {
 
 
 /* =========================================================
-   03. NAVBAR
+   04. NAVBAR
 ========================================================= */
 
 .navbar {
@@ -97,9 +106,11 @@ a {
   justify-content: space-between;
 
   width: 100%;
+
   padding: 18px 5vw;
 
   background: var(--paper);
+
   border-bottom: 1px solid var(--line);
 }
 
@@ -107,13 +118,17 @@ a {
   display: flex;
   flex-direction: column;
 
+  color: var(--ink);
+
   text-decoration: none;
+
   line-height: 0.85;
 }
 
 .logo-main {
   font-size: 25px;
   font-weight: 900;
+
   letter-spacing: -0.07em;
 }
 
@@ -122,6 +137,7 @@ a {
 
   font-size: 8px;
   font-weight: 700;
+
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -129,16 +145,20 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
+
   gap: 30px;
 }
 
 .nav-links a {
   position: relative;
 
+  color: var(--ink);
+
   text-decoration: none;
 
   font-size: 11px;
   font-weight: 800;
+
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -147,6 +167,7 @@ a {
   content: "";
 
   position: absolute;
+
   left: 0;
   bottom: -5px;
 
@@ -163,7 +184,9 @@ a {
 }
 
 
-/* ---------- Bag Button ---------- */
+/* =========================================================
+   BAG BUTTON
+========================================================= */
 
 .bag-button {
   position: relative;
@@ -171,6 +194,8 @@ a {
 
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+
   gap: 7px;
 
   padding: 9px 14px;
@@ -183,11 +208,13 @@ a {
 
   font-size: 10px;
   font-weight: 900;
+
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
+  text-decoration: none;
+
   cursor: pointer;
-  pointer-events: auto;
 
   transition:
     transform 0.2s ease,
@@ -196,6 +223,7 @@ a {
 
 .bag-button:hover {
   transform: translate(-2px, -2px);
+
   box-shadow: 3px 3px 0 var(--ink);
 }
 
@@ -206,6 +234,7 @@ a {
 
   min-width: 17px;
   height: 17px;
+
   padding: 0 5px;
 
   background: var(--ink);
@@ -218,17 +247,20 @@ a {
 
 
 /* =========================================================
-   04. HERO / LANDING PAGE
+   05. HERO
 ========================================================= */
 
 .hero {
   position: relative;
 
   display: grid;
+
   grid-template-columns: 1.15fr 0.85fr;
+
   align-items: center;
 
   min-height: 720px;
+
   padding: 90px 7vw;
 
   background: var(--pink);
@@ -240,11 +272,13 @@ a {
   content: "PRELOVED BY LEA";
 
   position: absolute;
+
   top: 32px;
   right: 6vw;
 
   font-size: 10px;
   font-weight: 900;
+
   letter-spacing: 0.2em;
 
   opacity: 0.5;
@@ -261,14 +295,17 @@ a {
   display: inline-block;
 
   margin-bottom: 25px;
+
   padding: 8px 13px;
 
   background: var(--paper);
+
   border: 1px solid var(--ink);
   border-radius: 999px;
 
   font-size: 10px;
   font-weight: 900;
+
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -279,9 +316,21 @@ a {
   max-width: 850px;
 
   font-size: clamp(65px, 10vw, 150px);
+
   line-height: 0.78;
+
   letter-spacing: -0.075em;
+
   text-transform: uppercase;
+}
+
+.hero h1 em {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-weight: 400;
 }
 
 .hero-description {
@@ -290,27 +339,33 @@ a {
   margin: 35px 0 0;
 
   font-size: 17px;
+
   line-height: 1.65;
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
+
   gap: 12px;
 
   margin-top: 35px;
 }
 
 
-/* ---------- Hero Buttons ---------- */
+/* =========================================================
+   BUTTONS
+========================================================= */
 
 .primary-button,
 .secondary-button {
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
 
   min-height: 46px;
+
   padding: 0 20px;
 
   border: 1px solid var(--ink);
@@ -319,12 +374,14 @@ a {
 
   font-size: 10px;
   font-weight: 900;
+
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 .primary-button {
@@ -340,18 +397,22 @@ a {
 .primary-button:hover,
 .secondary-button:hover {
   transform: translate(-3px, -3px);
+
   box-shadow: 4px 4px 0 var(--ink);
 }
 
 
-/* ---------- Hero Card ---------- */
+/* =========================================================
+   HERO CARD
+========================================================= */
 
 .hero-card {
   position: relative;
 
   display: flex;
-  justify-content: center;
+
   align-items: center;
+  justify-content: center;
 
   min-height: 460px;
 }
@@ -360,11 +421,13 @@ a {
   content: "01";
 
   position: absolute;
+
   top: 5%;
   right: 8%;
 
   font-size: 90px;
   font-weight: 900;
+
   letter-spacing: -0.08em;
 
   opacity: 0.08;
@@ -373,7 +436,13 @@ a {
 .hero-card-inner {
   position: relative;
 
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
   width: min(380px, 90%);
+
   aspect-ratio: 0.78;
 
   background: var(--paper);
@@ -391,14 +460,14 @@ a {
   content: "LEA'S CLOSET";
 
   position: absolute;
+
   top: 20px;
   left: 20px;
 
   font-size: 10px;
   font-weight: 900;
-  letter-spacing: 0.15em;
 
-  z-index: 2;
+  letter-spacing: 0.15em;
 }
 
 .hero-card-inner::after {
@@ -407,27 +476,34 @@ a {
   white-space: pre;
 
   position: absolute;
+
   left: 20px;
   bottom: 22px;
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 27px;
-  line-height: 0.95;
-  font-style: italic;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  z-index: 2;
+  font-size: 27px;
+
+  line-height: 0.95;
+
+  font-style: italic;
 }
 
 
 /* =========================================================
-   05. MARQUEE
+   06. MARQUEE
 ========================================================= */
 
 .marquee {
   width: 100%;
+
   overflow: hidden;
 
   background: var(--green);
+
   border-bottom: 1px solid var(--ink);
 
   white-space: nowrap;
@@ -446,7 +522,9 @@ a {
 
   font-size: 11px;
   font-weight: 900;
+
   letter-spacing: 0.15em;
+
   text-transform: uppercase;
 }
 
@@ -462,7 +540,7 @@ a {
 
 
 /* =========================================================
-   06. SHOP SECTION
+   07. SHOP
 ========================================================= */
 
 .shop-section {
@@ -473,8 +551,10 @@ a {
 
 .shop-heading {
   display: flex;
+
   align-items: flex-end;
   justify-content: space-between;
+
   gap: 30px;
 
   margin-bottom: 45px;
@@ -487,7 +567,9 @@ a {
 
   font-size: 10px;
   font-weight: 900;
+
   letter-spacing: 0.17em;
+
   text-transform: uppercase;
 }
 
@@ -495,26 +577,32 @@ a {
   margin: 0;
 
   font-size: clamp(45px, 7vw, 90px);
+
   line-height: 0.85;
+
   letter-spacing: -0.06em;
+
   text-transform: uppercase;
 }
 
 #productCount {
   font-size: 11px;
   font-weight: 800;
+
   letter-spacing: 0.08em;
 }
 
 
 /* =========================================================
-   07. SHOP CONTROLS
+   SHOP CONTROLS
 ========================================================= */
 
 .shop-controls {
   display: flex;
+
   align-items: center;
   justify-content: space-between;
+
   gap: 20px;
 
   margin-bottom: 35px;
@@ -525,13 +613,12 @@ a {
 }
 
 .search-box {
-  position: relative;
-
   width: min(330px, 100%);
 }
 
 .search-box input {
   width: 100%;
+
   height: 43px;
 
   padding: 0 15px;
@@ -539,6 +626,7 @@ a {
   background: transparent;
 
   border: 1px solid var(--ink);
+
   outline: none;
 
   font-size: 12px;
@@ -550,7 +638,9 @@ a {
 
 .filter-buttons {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 7px;
 }
 
@@ -564,10 +654,14 @@ a {
 
   font-size: 9px;
   font-weight: 900;
+
   letter-spacing: 0.08em;
+
   text-transform: uppercase;
 
-  transition: all 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .filter:hover,
@@ -578,17 +672,22 @@ a {
 
 
 /* =========================================================
-   08. PRODUCT GRID
+   PRODUCT GRID
 ========================================================= */
 
 #productGrid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
   gap: 18px;
 }
 
 
-/* ---------- Product Card ---------- */
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
 
 .product-card {
   position: relative;
@@ -608,16 +707,20 @@ a {
 
 .product-card:hover {
   transform: translate(-4px, -4px);
+
   box-shadow: 6px 6px 0 var(--ink);
 }
 
 
-/* ---------- Product Image ---------- */
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
 
 .product-image {
   position: relative;
 
   width: 100%;
+
   aspect-ratio: 0.9;
 
   background: #f3edf1;
@@ -649,27 +752,36 @@ a {
   padding: 6px 8px;
 
   background: var(--paper);
+
   border: 1px solid var(--ink);
 
   font-size: 8px;
   font-weight: 900;
+
   letter-spacing: 0.08em;
+
   text-transform: uppercase;
 }
 
 
-/* ---------- Product Info ---------- */
+/* =========================================================
+   PRODUCT INFO
+========================================================= */
 
 .product-info {
   padding: 16px;
 }
 
 .product-brand {
+  display: block;
+
   margin-bottom: 6px;
 
   font-size: 8px;
   font-weight: 900;
+
   letter-spacing: 0.15em;
+
   text-transform: uppercase;
 
   opacity: 0.55;
@@ -678,14 +790,17 @@ a {
 .product-name {
   min-height: 42px;
 
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 
   font-size: 14px;
   font-weight: 800;
+
   line-height: 1.2;
 }
 
 .product-price {
+  margin: 0;
+
   font-size: 14px;
   font-weight: 900;
 }
@@ -694,19 +809,22 @@ a {
   display: inline-block;
 
   margin-top: 10px;
+
   padding: 5px 7px;
 
   background: var(--pink);
 
   font-size: 8px;
   font-weight: 800;
+
   letter-spacing: 0.05em;
+
   text-transform: uppercase;
 }
 
 
 /* =========================================================
-   09. EMPTY STATE
+   EMPTY SEARCH
 ========================================================= */
 
 #emptyState {
@@ -721,6 +839,7 @@ a {
   margin: 0 0 10px;
 
   font-size: 35px;
+
   letter-spacing: -0.05em;
 }
 
@@ -732,11 +851,17 @@ a {
 
 
 /* =========================================================
-   10. ABOUT LEA
+   08. ABOUT LEA
 ========================================================= */
 
 .about-section {
   position: relative;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 70px;
 
   padding: 120px 6vw;
 
@@ -752,11 +877,13 @@ a {
   content: "KAILEASELL / ABOUT";
 
   position: absolute;
+
   top: 28px;
   left: 6vw;
 
   font-size: 10px;
   font-weight: 900;
+
   letter-spacing: 0.18em;
 
   opacity: 0.5;
@@ -766,10 +893,12 @@ a {
   content: "♡";
 
   position: absolute;
+
   right: 5vw;
   bottom: 20px;
 
   font-family: Georgia, serif;
+
   font-size: 150px;
 
   opacity: 0.08;
@@ -777,18 +906,16 @@ a {
   transform: rotate(-12deg);
 }
 
-.about-inner {
+.about-section > div {
   position: relative;
   z-index: 2;
-
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
 .about-label {
   display: inline-block;
 
   margin-bottom: 25px;
+
   padding: 8px 15px;
 
   background: var(--paper);
@@ -798,41 +925,27 @@ a {
 
   font-size: 10px;
   font-weight: 900;
+
   letter-spacing: 0.16em;
+
   text-transform: uppercase;
 }
 
-.about-title {
-  max-width: 900px;
+.about-section h2 {
+  margin: 0;
 
-  margin: 0 0 40px;
+  font-size: clamp(55px, 8vw, 110px);
 
-  font-size: clamp(48px, 8vw, 100px);
-  line-height: 0.88;
-  letter-spacing: -0.065em;
-  text-transform: uppercase;
-}
+  line-height: 0.82;
 
-.about-title span {
-  display: block;
-
-  margin-top: 12px;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.58em;
-  font-weight: 400;
-  font-style: italic;
-
-  line-height: 1;
-
-  letter-spacing: -0.035em;
-  text-transform: none;
+  letter-spacing: -0.07em;
 }
 
 .about-copy {
-  max-width: 760px;
+  max-width: 620px;
 
-  font-size: 16px;
+  font-size: 14px;
+
   line-height: 1.8;
 }
 
@@ -844,71 +957,36 @@ a {
   font-weight: 900;
 }
 
-.about-copy em {
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-}
-
-.about-quote {
-  max-width: 720px;
-
-  margin: 45px 0;
-  padding: 30px 32px;
-
-  background: var(--paper);
-
-  border: 1px solid var(--ink);
-
-  box-shadow: 8px 8px 0 var(--ink);
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(24px, 3vw, 36px);
-  font-style: italic;
-  line-height: 1.15;
-}
-
-.about-social {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 6px;
-
-  margin-top: 8px;
-  padding: 18px 23px;
-
-  background: var(--ink);
-  color: var(--paper);
-
-  border: 1px solid var(--ink);
+.about-handle {
+  font-weight: 900;
 
   text-decoration: none;
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  border-bottom: 1px solid var(--ink);
+
+  transition: background 0.2s ease;
 }
 
-.about-social:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: 7px 7px 0 var(--paper);
+.about-handle:hover {
+  background: var(--paper);
 }
 
-.about-social small {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+.about-signature {
+  margin-top: 35px;
 
-  opacity: 0.65;
-}
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
-.about-social strong {
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 25px;
+
+  font-style: italic;
 }
 
 
 /* =========================================================
-   11. HOW IT WORKS
+   09. HOW IT WORKS
 ========================================================= */
 
 .how-section {
@@ -919,29 +997,37 @@ a {
   border-bottom: 1px solid var(--ink);
 }
 
-.how-section > * {
+.how-heading {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+
+  margin: 0 auto 50px;
 }
 
-.how-section h2 {
-  margin-top: 0;
-  margin-bottom: 55px;
+.how-heading h2 {
+  margin: 0;
 
   font-size: clamp(45px, 7vw, 85px);
+
   line-height: 0.85;
+
   letter-spacing: -0.06em;
+
   text-transform: uppercase;
 }
 
 .how-grid {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 15px;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
 }
 
-.how-card {
+.how-item {
   min-height: 260px;
 
   padding: 25px;
@@ -949,6 +1035,16 @@ a {
   background: var(--paper);
 
   border: 1px solid var(--ink);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.how-item:hover {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 5px 5px 0 var(--ink);
 }
 
 .how-number {
@@ -958,95 +1054,146 @@ a {
 
   font-size: 11px;
   font-weight: 900;
+
   letter-spacing: 0.15em;
 }
 
-.how-card h3 {
+.how-item h3 {
   margin: 0 0 10px;
 
   font-size: 25px;
+
   letter-spacing: -0.04em;
 }
 
-.how-card p {
+.how-item p {
   margin: 0;
 
   font-size: 13px;
+
   line-height: 1.6;
 }
 
 
 /* =========================================================
-   12. FOOTER
+   10. CTA
+========================================================= */
+
+.cta-section {
+  padding: 120px 5vw;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      var(--pink) 0,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      var(--blue) 0,
+      transparent 30%
+    ),
+    var(--paper);
+}
+
+.cta-section h2 {
+  margin: 0 0 36px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(44px, 6vw, 84px);
+
+  font-weight: 500;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.04em;
+}
+
+.cta-section h2 em {
+  color: var(--denim);
+}
+
+
+/* =========================================================
+   11. FOOTER
 ========================================================= */
 
 .footer {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
   padding: 70px 5vw 30px;
 
   background: var(--ink);
+
   color: var(--paper);
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-
-  padding-bottom: 60px;
-
-  border-bottom: 1px solid rgba(255, 250, 252, 0.25);
 }
 
 .footer-logo {
   font-size: clamp(45px, 8vw, 90px);
+
   font-weight: 900;
+
   line-height: 0.8;
+
   letter-spacing: -0.07em;
 }
 
-.footer-copy {
-  max-width: 300px;
+.footer p {
+  margin: 15px 0 0;
 
-  font-size: 12px;
-  line-height: 1.7;
+  font-size: 11px;
 
-  opacity: 0.7;
+  opacity: 0.65;
 }
 
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-
-  padding-top: 20px;
-
+.footer-right {
   font-size: 9px;
+
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.1em;
+
+  text-align: right;
 
   opacity: 0.55;
 }
 
 
 /* =========================================================
-   13. PRODUCT DETAIL MODAL
+   12. PRODUCT DETAIL MODAL
 ========================================================= */
 
 .product-modal {
   position: fixed;
+
   inset: 0;
 
   z-index: 2000;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
-  padding: 25px;
+  padding: 24px;
 
-  background: rgba(23, 21, 27, 0.65);
+  background: rgba(23, 21, 27, 0.68);
 
   opacity: 0;
+
   visibility: hidden;
 
   transition:
@@ -1056,149 +1203,297 @@ a {
 
 .product-modal.active {
   opacity: 1;
+
   visibility: visible;
 }
 
-.product-modal-content {
+.modal-overlay {
+  position: absolute;
+
+  inset: 0;
+}
+
+
+/* =========================================================
+   MODAL CARD
+========================================================= */
+
+.modal-card {
   position: relative;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  z-index: 2;
 
-  width: min(950px, 100%);
-  max-height: 90vh;
+  width: min(900px, 92vw);
+
+  max-height: 88vh;
 
   background: var(--paper);
 
   border: 1px solid var(--ink);
 
-  overflow: auto;
+  box-shadow: 10px 10px 0 var(--pink);
+
+  overflow: hidden;
+
+  animation: modalPop 0.25s ease;
 }
 
-.product-modal-image {
-  min-height: 500px;
+.modal-card:not(.single) {
+  display: grid;
 
-  background: #f1ebef;
+  grid-template-columns: 1fr 1fr;
 }
 
-.product-modal-image img {
+@keyframes modalPop {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(12px)
+      scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* =========================================================
+   MODAL CLOSE
+========================================================= */
+
+.modal-close {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  z-index: 20;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  background: var(--paper);
+
+  border: 1px solid var(--ink);
+
+  border-radius: 50%;
+
+  color: var(--ink);
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.modal-close:hover {
+  background: var(--pink);
+
+  transform: rotate(8deg);
+}
+
+
+/* =========================================================
+   MODAL IMAGE
+========================================================= */
+
+.modal-image {
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 540px;
+
+  background: #f2ecef;
+
+  overflow: hidden;
+}
+
+.modal-image img {
+  display: block;
+
   width: 100%;
   height: 100%;
 
   object-fit: cover;
 }
 
-.product-modal-info {
+
+/* =========================================================
+   MODAL INFO
+========================================================= */
+
+.modal-info {
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
 
-  padding: 45px;
+  min-width: 0;
+  min-height: 0;
+
+  padding: 48px 42px;
+
+  overflow-y: auto;
 }
 
-.product-modal-brand {
-  margin-bottom: 8px;
+.modal-label {
+  display: block;
+
+  margin-bottom: 12px;
 
   font-size: 9px;
+
   font-weight: 900;
+
   letter-spacing: 0.16em;
+
   text-transform: uppercase;
 
-  opacity: 0.55;
+  opacity: 0.5;
 }
 
-.product-modal-info h2 {
-  margin: 0 0 15px;
+.modal-info h2 {
+  margin: 0 0 18px;
 
-  font-size: clamp(30px, 4vw, 55px);
-  line-height: 0.9;
+  font-size: clamp(32px, 4vw, 52px);
+
+  line-height: 0.92;
+
   letter-spacing: -0.06em;
 }
 
-.product-modal-price {
-  margin-bottom: 20px;
+.modal-price {
+  margin-bottom: 15px;
 
   font-size: 18px;
+
   font-weight: 900;
 }
 
-.product-modal-condition {
-  display: inline-block;
-
+.modal-condition {
   align-self: flex-start;
 
-  margin-bottom: 25px;
-  padding: 7px 9px;
+  margin-bottom: 28px;
+
+  padding: 7px 10px;
 
   background: var(--green);
 
   border: 1px solid var(--ink);
 
   font-size: 9px;
+
   font-weight: 900;
+
+  letter-spacing: 0.05em;
+
   text-transform: uppercase;
 }
 
-.product-modal-description {
+.modal-note {
   margin-bottom: 30px;
+}
 
-  font-family: Georgia, "Times New Roman", serif;
+.modal-note small {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.modal-note p {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
   font-size: 17px;
+
   line-height: 1.5;
+
   font-style: italic;
 }
 
-.add-button {
+
+/* =========================================================
+   ADD TO BAG
+========================================================= */
+
+.add-bag-button {
   width: 100%;
-  min-height: 50px;
+
+  min-height: 52px;
+
+  padding: 14px 20px;
 
   background: var(--ink);
+
   color: var(--paper);
 
   border: 1px solid var(--ink);
 
   font-size: 10px;
+
   font-weight: 900;
-  letter-spacing: 0.1em;
+
+  letter-spacing: 0.11em;
+
   text-transform: uppercase;
 
-  transition: all 0.2s ease;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.add-button:hover {
+.add-bag-button:hover {
   background: var(--pink);
+
   color: var(--ink);
-}
 
-.modal-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
+  transform: translate(-3px, -3px);
 
-  z-index: 10;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 35px;
-  height: 35px;
-
-  background: var(--paper);
-
-  border: 1px solid var(--ink);
-  border-radius: 50%;
-
-  font-size: 18px;
+  box-shadow: 4px 4px 0 var(--ink);
 }
 
 
 /* =========================================================
-   14. OVERLAY
+   13. BAG DRAWER
 ========================================================= */
 
 #overlay {
   position: fixed;
+
   inset: 0;
 
   z-index: 900;
@@ -1206,6 +1501,7 @@ a {
   background: rgba(23, 21, 27, 0.45);
 
   opacity: 0;
+
   visibility: hidden;
 
   transition:
@@ -1215,25 +1511,24 @@ a {
 
 #overlay.active {
   opacity: 1;
+
   visibility: visible;
 }
 
-
-/* =========================================================
-   15. BAG DRAWER
-========================================================= */
-
 #bagDrawer {
   position: fixed;
+
   top: 0;
   right: 0;
 
   z-index: 1000;
 
   display: flex;
+
   flex-direction: column;
 
   width: min(460px, 92vw);
+
   height: 100vh;
 
   background: var(--paper);
@@ -1251,7 +1546,9 @@ a {
 
 .bag-header {
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
   padding: 22px;
@@ -1259,24 +1556,40 @@ a {
   border-bottom: 1px solid var(--ink);
 }
 
+.bag-header .section-label {
+  margin-bottom: 5px;
+
+  font-size: 8px;
+}
+
 .bag-header h2 {
   margin: 0;
 
-  font-size: 30px;
-  letter-spacing: -0.05em;
+  font-size: 32px;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.06em;
 }
 
-.bag-close {
-  width: 34px;
-  height: 34px;
+#bagClose {
+  width: 36px;
+  height: 36px;
 
-  background: transparent;
+  padding: 0;
+
+  background: var(--paper);
 
   border: 1px solid var(--ink);
+
   border-radius: 50%;
+
+  font-size: 20px;
+
+  line-height: 1;
 }
 
-.bag-items {
+#bagItems {
   flex: 1;
 
   padding: 20px;
@@ -1284,73 +1597,117 @@ a {
   overflow-y: auto;
 }
 
+
+/* =========================================================
+   BAG ITEMS
+========================================================= */
+
 .bag-item {
   display: grid;
-  grid-template-columns: 80px 1fr auto;
-  gap: 13px;
+
+  grid-template-columns: 85px 1fr;
+
+  gap: 14px;
 
   padding: 12px 0;
 
   border-bottom: 1px solid #ddd6da;
 }
 
-.bag-item-image {
-  width: 80px;
-  height: 90px;
+.bag-item > img {
+  width: 85px;
+  height: 95px;
 
   background: #f1ebef;
-
-  overflow: hidden;
-}
-
-.bag-item-image img {
-  width: 100%;
-  height: 100%;
 
   object-fit: cover;
 }
 
-.bag-item-name {
-  margin-bottom: 7px;
+.bag-item-info > span {
+  display: block;
 
-  font-size: 12px;
-  font-weight: 800;
+  margin-bottom: 5px;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+
+  opacity: 0.5;
 }
 
-.bag-item-price {
+.bag-item-info h4 {
+  margin: 0 0 8px;
+
+  font-size: 12px;
+
+  line-height: 1.25;
+}
+
+.bag-item-info strong {
   font-size: 11px;
-  font-weight: 900;
 }
 
 .remove-item {
-  align-self: start;
+  display: block;
+
+  margin-top: 10px;
+
+  padding: 0;
 
   background: none;
-  border: none;
 
-  font-size: 10px;
+  border: 0;
+
+  color: var(--ink);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
   text-decoration: underline;
 }
 
-.bag-empty {
-  padding: 70px 20px;
+
+/* =========================================================
+   EMPTY BAG
+========================================================= */
+
+.empty-bag {
+  padding: 80px 20px;
 
   text-align: center;
 }
 
-.bag-empty h3 {
-  margin: 0 0 10px;
+.empty-bag-icon {
+  margin-bottom: 15px;
 
-  font-size: 28px;
-  letter-spacing: -0.05em;
+  font-family: Georgia, serif;
+
+  font-size: 50px;
 }
 
-.bag-empty p {
+.empty-bag h3 {
+  margin: 0 0 8px;
+
+  font-size: 25px;
+
+  letter-spacing: -0.04em;
+}
+
+.empty-bag p {
   margin: 0;
 
   font-size: 12px;
-  line-height: 1.6;
+
+  line-height: 1.5;
 }
+
+
+/* =========================================================
+   BAG FOOTER
+========================================================= */
 
 .bag-footer {
   padding: 20px;
@@ -1358,371 +1715,343 @@ a {
   border-top: 1px solid var(--ink);
 }
 
-.bag-total {
+.bag-total-row {
   display: flex;
+
   justify-content: space-between;
 
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
-  font-size: 13px;
+  font-size: 11px;
+
   font-weight: 900;
 }
 
-.checkout-button {
-  width: 100%;
-  min-height: 50px;
+.bag-disclaimer {
+  margin: 0 0 15px;
 
-  background: var(--ink);
-  color: var(--paper);
-
-  border: 1px solid var(--ink);
-
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-
-/* =========================================================
-   16. CHECKOUT MODAL
-========================================================= */
-
-.checkout-modal {
-  position: fixed;
-  inset: 0;
-
-  z-index: 2500;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 20px;
-
-  background: rgba(23, 21, 27, 0.7);
-
-  opacity: 0;
-  visibility: hidden;
-
-  transition: all 0.25s ease;
-}
-
-.checkout-modal.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.checkout-box {
-  position: relative;
-
-  width: min(650px, 100%);
-  max-height: 90vh;
-
-  padding: 35px;
-
-  background: var(--paper);
-
-  border: 1px solid var(--ink);
-
-  overflow-y: auto;
-}
-
-.checkout-box h2 {
-  margin: 0 0 8px;
-
-  font-size: 45px;
-  line-height: 0.9;
-  letter-spacing: -0.06em;
-}
-
-.checkout-subtitle {
-  margin-bottom: 30px;
+  font-family: Georgia, serif;
 
   font-size: 12px;
-  line-height: 1.5;
+
+  font-style: italic;
 
   opacity: 0.6;
 }
 
-.checkout-field {
-  margin-bottom: 18px;
+.bag-footer .primary-button {
+  width: 100%;
+
+  min-height: 50px;
 }
 
-.checkout-field label {
+.bag-footer .primary-button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   14. CHECKOUT
+========================================================= */
+
+.modal-card.single {
+  width: min(650px, 92vw);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+}
+
+.checkout-wrap {
+  padding: 45px;
+}
+
+.checkout-wrap h2 {
+  margin: 8px 0 12px;
+
+  font-size: clamp(42px, 6vw, 70px);
+
+  line-height: 0.85;
+
+  letter-spacing: -0.06em;
+}
+
+.fiction-note {
+  max-width: 530px;
+
+  margin: 0 0 30px;
+
+  font-family: Georgia, serif;
+
+  font-size: 13px;
+
+  font-style: italic;
+
+  line-height: 1.5;
+
+  opacity: 0.65;
+}
+
+#checkoutForm label {
   display: block;
 
-  margin-bottom: 7px;
+  margin-bottom: 17px;
 
   font-size: 9px;
+
   font-weight: 900;
+
   letter-spacing: 0.12em;
+
   text-transform: uppercase;
 }
 
-.checkout-field input,
-.checkout-field textarea {
+#checkoutForm input[type="text"] {
+  display: block;
+
   width: 100%;
 
-  padding: 12px;
+  margin-top: 7px;
+
+  padding: 13px;
 
   background: transparent;
 
   border: 1px solid var(--ink);
+
   outline: none;
 
   font-size: 12px;
 }
 
-.checkout-field textarea {
-  min-height: 90px;
-  resize: vertical;
-}
-
-.checkout-field input:focus,
-.checkout-field textarea:focus {
+#checkoutForm input[type="text"]:focus {
   background: var(--blue);
 }
 
+#checkoutForm h3 {
+  margin: 28px 0 12px;
+
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   PAYMENT OPTIONS
+========================================================= */
+
 .payment-options {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
 
   margin-bottom: 25px;
 }
 
 .payment-option {
-  padding: 14px;
+  margin: 0 !important;
+
+  padding: 14px !important;
 
   background: var(--paper);
 
   border: 1px solid var(--ink);
 
-  font-size: 10px;
-  font-weight: 900;
-
-  text-align: center;
+  cursor: pointer;
 }
 
-.payment-option.active {
-  background: var(--green);
+.payment-option input {
+  display: none;
 }
 
-.confirm-order-button {
-  width: 100%;
-  min-height: 52px;
-
-  background: var(--ink);
-  color: var(--paper);
-
-  border: 1px solid var(--ink);
-
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-
-/* =========================================================
-   17. SHIPPING ANIMATION
-========================================================= */
-
-.shipping-screen {
-  position: fixed;
-  inset: 0;
-
-  z-index: 3000;
-
+.payment-option span {
   display: flex;
+
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  background: var(--pink);
-
-  opacity: 0;
-  visibility: hidden;
+  gap: 5px;
 }
 
-.shipping-screen.active {
-  opacity: 1;
-  visibility: visible;
+.payment-option strong {
+  font-size: 9px;
 }
 
-.shipping-box {
-  width: 110px;
-  height: 85px;
+.payment-option small {
+  font-size: 8px;
 
+  font-weight: 400;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+
+  opacity: 0.55;
+}
+
+.payment-option:has(input:checked) {
   background: var(--green);
-
-  border: 2px solid var(--ink);
-
-  animation: shippingBounce 1s ease-in-out infinite alternate;
 }
 
-.shipping-screen h2 {
-  margin: 30px 0 8px;
-
-  font-size: 38px;
-  letter-spacing: -0.05em;
-}
-
-.shipping-screen p {
-  margin: 0;
-
-  font-size: 12px;
-}
-
-@keyframes shippingBounce {
-  from {
-    transform: translateY(0) rotate(-3deg);
-  }
-
-  to {
-    transform: translateY(-12px) rotate(3deg);
-  }
+#checkoutForm .bag-total-row {
+  margin: 20px 0;
 }
 
 
 /* =========================================================
-   18. RECEIPT
+   15. RECEIPT
 ========================================================= */
 
-.receipt-screen {
-  position: fixed;
-  inset: 0;
-
-  z-index: 3500;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 20px;
-
-  background: rgba(23, 21, 27, 0.75);
-
-  opacity: 0;
-  visibility: hidden;
+.receipt-wrap {
+  padding: 35px;
 }
 
-.receipt-screen.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.receipt {
-  width: min(430px, 100%);
-
+#receiptCard {
   padding: 30px;
 
   background: var(--paper);
 
   border: 1px solid var(--ink);
 
-  box-shadow: 10px 10px 0 var(--pink);
+  box-shadow: 7px 7px 0 var(--pink);
 }
 
-.receipt-header {
+.r-top {
   padding-bottom: 20px;
 
-  border-bottom: 1px dashed var(--ink);
-
   text-align: center;
+
+  border-bottom: 1px dashed var(--ink);
 }
 
-.receipt-header h2 {
-  margin: 0 0 7px;
-
+.r-logo {
   font-size: 38px;
+
+  font-weight: 900;
+
   letter-spacing: -0.07em;
 }
 
-.receipt-header p {
-  margin: 0;
+.r-sub {
+  margin-top: 5px;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+.r-meta {
+  display: grid;
+
+  gap: 5px;
+
+  padding: 20px 0;
 
   font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+
+  line-height: 1.4;
 }
 
-.receipt-order {
-  margin: 20px 0;
-
-  font-size: 10px;
-  line-height: 1.7;
-}
-
-.receipt-items {
-  padding: 15px 0;
-
+.r-line {
   border-top: 1px dashed var(--ink);
-  border-bottom: 1px dashed var(--ink);
 }
 
-.receipt-item {
+.r-item {
   display: flex;
+
   justify-content: space-between;
+
   gap: 15px;
 
-  margin-bottom: 10px;
+  padding: 10px 0;
 
   font-size: 10px;
 }
 
-.receipt-total {
-  display: flex;
-  justify-content: space-between;
-
-  padding-top: 15px;
-
-  font-size: 14px;
+.r-total {
   font-weight: 900;
 }
 
-.receipt-note {
-  margin-top: 20px;
+.r-foot {
+  margin: 20px 0 0;
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 13px;
-  line-height: 1.5;
+  font-family: Georgia, serif;
+
+  font-size: 12px;
+
   font-style: italic;
+
+  line-height: 1.5;
 
   text-align: center;
 }
 
+.r-stamp {
+  margin-top: 20px;
+
+  padding: 8px;
+
+  border: 1px solid var(--ink);
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   RECEIPT ACTIONS
+========================================================= */
+
 .receipt-actions {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 8px;
 
   margin-top: 25px;
 }
 
-.receipt-actions button {
-  min-height: 43px;
-
-  border: 1px solid var(--ink);
-
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.receipt-actions .secondary-button {
+  min-height: 50px;
 }
 
-.save-receipt {
-  background: var(--green);
+.receipt-hint {
+  grid-column: 1 / -1;
+
+  margin: 8px 0 0;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  opacity: 0.6;
 }
 
-.tweet-receipt {
-  background: var(--blue);
+#receiptPreview img {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 15px;
 }
 
 
 /* =========================================================
-   19. RESPONSIVE — TABLET
+   16. TABLET
 ========================================================= */
 
 @media (max-width: 1000px) {
@@ -1731,9 +2060,11 @@ a {
     grid-template-columns: 1fr;
 
     min-height: auto;
+
     gap: 70px;
 
     padding-top: 80px;
+
     padding-bottom: 100px;
   }
 
@@ -1742,11 +2073,13 @@ a {
   }
 
   #productGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
   }
 
   .shop-controls {
     align-items: flex-start;
+
     flex-direction: column;
   }
 
@@ -1754,24 +2087,19 @@ a {
     width: 100%;
   }
 
-  .product-modal-content {
-    grid-template-columns: 1fr;
-  }
-
-  .product-modal-image {
-    min-height: 350px;
-    max-height: 450px;
+  .modal-image {
+    min-height: 470px;
   }
 }
 
 
 /* =========================================================
-   20. RESPONSIVE — MOBILE
+   17. MOBILE
 ========================================================= */
 
 @media (max-width: 700px) {
 
-  /* ---------- Navbar ---------- */
+  /* ---------- NAVBAR ---------- */
 
   .navbar {
     padding: 15px 20px;
@@ -1794,7 +2122,7 @@ a {
   }
 
 
-  /* ---------- Hero ---------- */
+  /* ---------- HERO ---------- */
 
   .hero {
     padding: 70px 24px 85px;
@@ -1803,14 +2131,16 @@ a {
   }
 
   .hero::before {
-    right: 24px;
     top: 20px;
+
+    right: 24px;
 
     font-size: 8px;
   }
 
   .hero h1 {
-    font-size: clamp(58px, 17vw, 90px);
+    font-size:
+      clamp(58px, 17vw, 90px);
   }
 
   .hero-description {
@@ -1826,6 +2156,7 @@ a {
   .primary-button,
   .secondary-button {
     min-height: 43px;
+
     padding: 0 15px;
   }
 
@@ -1840,7 +2171,7 @@ a {
   }
 
 
-  /* ---------- Shop ---------- */
+  /* ---------- SHOP ---------- */
 
   .shop-section {
     padding: 75px 20px;
@@ -1848,6 +2179,7 @@ a {
 
   .shop-heading {
     align-items: flex-start;
+
     flex-direction: column;
 
     gap: 10px;
@@ -1856,11 +2188,14 @@ a {
   }
 
   .shop-heading h2 {
-    font-size: clamp(48px, 15vw, 75px);
+    font-size:
+      clamp(48px, 15vw, 75px);
   }
 
   #productGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
     gap: 10px;
   }
 
@@ -1883,14 +2218,25 @@ a {
   }
 
 
-  /* ---------- About ---------- */
+  /* ---------- ABOUT ---------- */
 
   .about-section {
+    display: block;
+
     padding: 85px 24px;
+  }
+
+  .about-section > div {
+    margin-bottom: 35px;
+  }
+
+  .about-section > div:last-child {
+    margin-bottom: 0;
   }
 
   .about-section::before {
     top: 20px;
+
     left: 24px;
 
     font-size: 8px;
@@ -1898,54 +2244,48 @@ a {
 
   .about-section::after {
     right: 5px;
+
     bottom: 10px;
 
     font-size: 90px;
   }
 
-  .about-title {
-    margin-bottom: 30px;
-
-    font-size: clamp(45px, 14vw, 70px);
+  .about-section h2 {
+    font-size:
+      clamp(55px, 15vw, 80px);
   }
 
   .about-copy {
+    max-width: 100%;
+
     font-size: 14px;
+
     line-height: 1.75;
   }
 
-  .about-quote {
-    margin: 32px 0;
-    padding: 23px;
 
-    box-shadow: 5px 5px 0 var(--ink);
-
-    font-size: 23px;
-  }
-
-  .about-social {
-    width: 100%;
-  }
-
-
-  /* ---------- How ---------- */
+  /* ---------- HOW ---------- */
 
   .how-section {
     padding: 75px 20px;
   }
 
-  .how-section h2 {
+  .how-heading {
     margin-bottom: 35px;
+  }
 
-    font-size: clamp(48px, 15vw, 75px);
+  .how-heading h2 {
+    font-size:
+      clamp(48px, 15vw, 75px);
   }
 
   .how-grid {
     grid-template-columns: 1fr;
+
     gap: 10px;
   }
 
-  .how-card {
+  .how-item {
     min-height: 200px;
   }
 
@@ -1954,63 +2294,101 @@ a {
   }
 
 
-  /* ---------- Footer ---------- */
+  /* ---------- CTA ---------- */
+
+  .cta-section {
+    padding: 85px 24px;
+  }
+
+  .cta-section h2 {
+    font-size:
+      clamp(42px, 12vw, 65px);
+  }
+
+
+  /* ---------- FOOTER ---------- */
 
   .footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+
     padding: 60px 20px 25px;
   }
 
-  .footer-top {
-    flex-direction: column;
-
-    padding-bottom: 40px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 8px;
+  .footer-right {
+    text-align: left;
   }
 
 
-  /* ---------- Product Modal ---------- */
+  /* =====================================================
+     PRODUCT MODAL
+  ===================================================== */
 
   .product-modal {
     padding: 10px;
   }
 
-  .product-modal-content {
+  .modal-card:not(.single) {
+    display: block;
+
+    width: 94vw;
+
     max-height: 94vh;
+
+    overflow-y: auto;
   }
 
-  .product-modal-image {
-    min-height: 280px;
-    max-height: 330px;
+  .modal-image {
+    width: 100%;
+
+    height: 42vh;
+
+    min-height: 260px;
+
+    max-height: 360px;
   }
 
-  .product-modal-info {
-    padding: 28px 22px;
+  .modal-info {
+    padding: 27px 22px 25px;
+
+    overflow: visible;
   }
 
-  .product-modal-info h2 {
+  .modal-info h2 {
     font-size: 38px;
   }
 
+  .modal-note p {
+    font-size: 15px;
+  }
 
-  /* ---------- Bag ---------- */
+
+  /* =====================================================
+     BAG
+  ===================================================== */
 
   #bagDrawer {
     width: 100%;
   }
 
 
-  /* ---------- Checkout ---------- */
+  /* =====================================================
+     CHECKOUT
+  ===================================================== */
 
-  .checkout-box {
-    padding: 25px 20px;
+  .modal-card.single {
+    width: 94vw;
+
+    max-height: 92vh;
   }
 
-  .checkout-box h2 {
-    font-size: 38px;
+  .checkout-wrap {
+    padding: 28px 20px;
+  }
+
+  .checkout-wrap h2 {
+    font-size: 43px;
   }
 
   .payment-options {
@@ -2018,22 +2396,32 @@ a {
   }
 
 
-  /* ---------- Receipt ---------- */
+  /* =====================================================
+     RECEIPT
+  ===================================================== */
 
-  .receipt {
-    padding: 23px;
+  .receipt-wrap {
+    padding: 20px;
+  }
 
-    box-shadow: 6px 6px 0 var(--pink);
+  #receiptCard {
+    padding: 22px;
+
+    box-shadow: 5px 5px 0 var(--pink);
   }
 
   .receipt-actions {
     grid-template-columns: 1fr;
   }
+
+  .receipt-hint {
+    grid-column: auto;
+  }
 }
 
 
 /* =========================================================
-   21. VERY SMALL SCREEN
+   18. VERY SMALL PHONE
 ========================================================= */
 
 @media (max-width: 400px) {
@@ -2058,819 +2446,7 @@ a {
     font-size: 11px;
   }
 
-  .about-title {
-    font-size: 45px;
+  .about-section h2 {
+    font-size: 48px;
   }
    }
-/* =========================================================
-   PRODUCT DETAIL MODAL — MATCH SCRIPT.JS
-========================================================= */
-
-.product-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 20px;
-
-  opacity: 0;
-  visibility: hidden;
-
-  transition:
-    opacity 0.25s ease,
-    visibility 0.25s ease;
-}
-
-.product-modal.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-/* ---------- Dark Background ---------- */
-
-.modal-overlay {
-  position: absolute;
-  inset: 0;
-
-  background: rgba(23, 21, 27, 0.68);
-}
-
-
-/* ---------- Product Card ---------- */
-
-.modal-card {
-  position: relative;
-  z-index: 2;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  width: min(950px, 100%);
-  max-height: 90vh;
-
-  background: var(--paper);
-  border: 1px solid var(--ink);
-
-  overflow: auto;
-
-  box-shadow: 10px 10px 0 var(--pink);
-}
-
-
-/* ---------- Close Button ---------- */
-
-.modal-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-
-  z-index: 10;
-
-  width: 36px;
-  height: 36px;
-
-  background: var(--paper);
-
-  border: 1px solid var(--ink);
-  border-radius: 50%;
-
-  font-size: 20px;
-  line-height: 1;
-
-  cursor: pointer;
-}
-
-
-/* ---------- Image ---------- */
-
-.modal-image {
-  min-height: 520px;
-
-  background: #f2ecef;
-
-  overflow: hidden;
-}
-
-.modal-image img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-
-/* ---------- Information ---------- */
-
-.modal-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 45px;
-}
-
-.modal-label {
-  margin-bottom: 10px;
-
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-
-  opacity: 0.5;
-}
-
-.modal-info h2 {
-  margin: 0 0 18px;
-
-  font-size: clamp(32px, 4vw, 55px);
-  line-height: 0.9;
-  letter-spacing: -0.06em;
-}
-
-.modal-price {
-  margin-bottom: 15px;
-
-  font-size: 18px;
-  font-weight: 900;
-}
-
-.modal-condition {
-  align-self: flex-start;
-
-  margin-bottom: 28px;
-  padding: 7px 10px;
-
-  background: var(--green);
-
-  border: 1px solid var(--ink);
-
-  font-size: 9px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-
-/* ---------- Lea's Note ---------- */
-
-.modal-note {
-  margin-bottom: 30px;
-}
-
-.modal-note small {
-  display: block;
-
-  margin-bottom: 9px;
-
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.modal-note p {
-  margin: 0;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 17px;
-  line-height: 1.5;
-  font-style: italic;
-}
-
-
-/* ---------- Add To Bag ---------- */
-
-.add-bag-button {
-  width: 100%;
-  min-height: 52px;
-
-  padding: 14px 20px;
-
-  background: var(--ink);
-  color: var(--paper);
-
-  border: 1px solid var(--ink);
-
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-
-  cursor: pointer;
-
-  transition:
-    background 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.add-bag-button:hover {
-  background: var(--pink);
-  color: var(--ink);
-
-  transform: translate(-3px, -3px);
-}
-
-
-/* =========================================================
-   BAG DRAWER — MATCH SCRIPT.JS
-========================================================= */
-
-#bagDrawer {
-  position: fixed;
-  top: 0;
-  right: 0;
-
-  z-index: 2500;
-
-  display: flex;
-  flex-direction: column;
-
-  width: min(460px, 92vw);
-  height: 100vh;
-
-  background: var(--paper);
-
-  border-left: 1px solid var(--ink);
-
-  transform: translateX(100%);
-
-  transition: transform 0.35s ease;
-}
-
-#bagDrawer.active {
-  transform: translateX(0);
-}
-
-.bag-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 22px;
-
-  border-bottom: 1px solid var(--ink);
-}
-
-.bag-header h2 {
-  margin: 5px 0 0;
-
-  font-size: 32px;
-  line-height: 0.9;
-  letter-spacing: -0.06em;
-}
-
-#bagClose {
-  width: 36px;
-  height: 36px;
-
-  background: var(--paper);
-
-  border: 1px solid var(--ink);
-  border-radius: 50%;
-
-  font-size: 20px;
-}
-
-#bagItems {
-  flex: 1;
-
-  padding: 20px;
-
-  overflow-y: auto;
-}
-
-.bag-item {
-  display: grid;
-  grid-template-columns: 85px 1fr;
-
-  gap: 13px;
-
-  padding: 12px 0;
-
-  border-bottom: 1px solid #ddd6da;
-}
-
-.bag-item > img {
-  width: 85px;
-  height: 95px;
-
-  object-fit: cover;
-
-  background: #f1ebef;
-}
-
-.bag-item-info > span {
-  display: block;
-
-  margin-bottom: 5px;
-
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-
-  opacity: 0.5;
-}
-
-.bag-item-info h4 {
-  margin: 0 0 8px;
-
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.bag-item-info strong {
-  font-size: 11px;
-}
-
-.remove-item {
-  display: block;
-
-  margin-top: 10px;
-  padding: 0;
-
-  background: none;
-  border: 0;
-
-  font-size: 8px;
-  font-weight: 800;
-  text-decoration: underline;
-}
-
-.bag-footer {
-  padding: 20px;
-
-  border-top: 1px solid var(--ink);
-}
-
-.bag-total-row {
-  display: flex;
-  justify-content: space-between;
-
-  margin-bottom: 12px;
-
-  font-size: 11px;
-  font-weight: 900;
-}
-
-.bag-disclaimer {
-  margin: 0 0 15px;
-
-  font-family: Georgia, serif;
-  font-size: 12px;
-  font-style: italic;
-
-  opacity: 0.6;
-}
-
-.bag-footer .primary-button {
-  width: 100%;
-
-  min-height: 50px;
-
-  border: 1px solid var(--ink);
-
-  cursor: pointer;
-}
-
-.bag-footer .primary-button:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-
-/* ---------- Empty Bag ---------- */
-
-.empty-bag {
-  padding: 80px 20px;
-
-  text-align: center;
-}
-
-.empty-bag-icon {
-  margin-bottom: 15px;
-
-  font-family: Georgia, serif;
-  font-size: 50px;
-}
-
-.empty-bag h3 {
-  margin: 0 0 8px;
-
-  font-size: 25px;
-  letter-spacing: -0.04em;
-}
-
-.empty-bag p {
-  margin: 0;
-
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-
-/* =========================================================
-   CHECKOUT MODAL
-========================================================= */
-
-.product-modal .checkout-wrap {
-  grid-column: 1 / -1;
-
-  padding: 45px;
-}
-
-.checkout-wrap h2 {
-  margin: 8px 0 12px;
-
-  font-size: clamp(40px, 6vw, 70px);
-  line-height: 0.85;
-  letter-spacing: -0.06em;
-}
-
-.fiction-note {
-  max-width: 550px;
-
-  margin-bottom: 30px;
-
-  font-family: Georgia, serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 1.5;
-
-  opacity: 0.65;
-}
-
-#checkoutForm label {
-  display: block;
-
-  margin-bottom: 17px;
-
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-#checkoutForm input[type="text"] {
-  display: block;
-
-  width: 100%;
-
-  margin-top: 7px;
-  padding: 13px;
-
-  background: transparent;
-
-  border: 1px solid var(--ink);
-  outline: none;
-
-  font-size: 12px;
-}
-
-#checkoutForm input[type="text"]:focus {
-  background: var(--blue);
-}
-
-#checkoutForm h3 {
-  margin: 28px 0 12px;
-
-  font-size: 10px;
-  letter-spacing: 0.12em;
-}
-
-.payment-options {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-
-  margin-bottom: 25px;
-}
-
-.payment-option {
-  margin: 0 !important;
-  padding: 14px !important;
-
-  background: var(--paper);
-
-  border: 1px solid var(--ink);
-
-  cursor: pointer;
-}
-
-.payment-option input {
-  display: none;
-}
-
-.payment-option span {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.payment-option strong {
-  font-size: 9px;
-}
-
-.payment-option small {
-  font-size: 8px;
-  font-weight: 400;
-  letter-spacing: 0;
-  text-transform: none;
-
-  opacity: 0.55;
-}
-
-.payment-option:has(input:checked) {
-  background: var(--green);
-}
-
-#checkoutForm .bag-total-row {
-  margin: 20px 0;
-}
-
-#checkoutForm .add-bag-button {
-  margin-top: 5px;
-}
-
-
-/* =========================================================
-   RECEIPT
-========================================================= */
-
-.receipt-wrap {
-  grid-column: 1 / -1;
-
-  padding: 35px;
-}
-
-#receiptCard {
-  padding: 30px;
-
-  background: var(--paper);
-
-  border: 1px solid var(--ink);
-
-  box-shadow: 7px 7px 0 var(--pink);
-}
-
-.r-top {
-  padding-bottom: 20px;
-
-  text-align: center;
-
-  border-bottom: 1px dashed var(--ink);
-}
-
-.r-logo {
-  font-size: 38px;
-  font-weight: 900;
-  letter-spacing: -0.07em;
-}
-
-.r-sub {
-  margin-top: 5px;
-
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-}
-
-.r-meta {
-  display: grid;
-  gap: 5px;
-
-  padding: 20px 0;
-
-  font-size: 9px;
-  line-height: 1.4;
-}
-
-.r-line {
-  border-top: 1px dashed var(--ink);
-}
-
-.r-item {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-
-  padding: 10px 0;
-
-  font-size: 10px;
-}
-
-.r-total {
-  font-weight: 900;
-}
-
-.r-foot {
-  margin: 20px 0 0;
-
-  font-family: Georgia, serif;
-  font-size: 12px;
-  font-style: italic;
-  line-height: 1.5;
-
-  text-align: center;
-}
-
-.r-stamp {
-  margin-top: 20px;
-  padding: 8px;
-
-  border: 1px solid var(--ink);
-
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-
-  text-align: center;
-}
-
-.receipt-actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  gap: 8px;
-
-  margin-top: 25px;
-}
-
-.receipt-actions .secondary-button {
-  min-height: 50px;
-}
-
-.receipt-hint {
-  grid-column: 1 / -1;
-
-  margin: 8px 0 0;
-
-  font-size: 10px;
-  line-height: 1.5;
-  text-align: center;
-
-  opacity: 0.6;
-}
-
-#receiptPreview img {
-  display: block;
-
-  margin-top: 15px;
-
-  width: 100%;
-}
-
-
-/* =========================================================
-   MOBILE MODAL
-========================================================= */
-
-@media (max-width: 700px) {
-
-  .product-modal {
-    padding: 10px;
-  }
-
-  .modal-card {
-    display: block;
-
-    width: 100%;
-    max-height: 94vh;
-
-    box-shadow: 5px 5px 0 var(--pink);
-  }
-
-  .modal-image {
-    min-height: 280px;
-    height: 42vh;
-  }
-
-  .modal-info {
-    padding: 25px 20px 22px;
-  }
-
-  .modal-info h2 {
-    font-size: 38px;
-  }
-
-  .modal-note p {
-    font-size: 15px;
-  }
-
-  .product-modal .checkout-wrap {
-    padding: 28px 20px;
-  }
-
-  .checkout-wrap h2 {
-    font-size: 43px;
-  }
-
-  .payment-options {
-    grid-template-columns: 1fr;
-  }
-
-  .receipt-wrap {
-    padding: 20px;
-  }
-
-  #receiptCard {
-    padding: 22px;
-    box-shadow: 5px 5px 0 var(--pink);
-  }
-
-  .receipt-actions {
-    grid-template-columns: 1fr;
-  }
-}
-/* =========================================================
-   PRODUCT MODAL — FIX SIZE
-========================================================= */
-
-.modal-card {
-  width: min(900px, 92vw);
-  height: min(680px, 88vh);
-  max-height: 88vh;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  overflow: hidden;
-}
-
-
-/* FOTO PRODUK */
-
-.modal-image {
-  width: 100%;
-  height: 100%;
-  min-height: 0;
-
-  background: #f2ecef;
-
-  overflow: hidden;
-}
-
-.modal-image img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-
-/* BAGIAN INFO */
-
-.modal-info {
-  min-height: 0;
-
-  padding: 40px;
-
-  overflow-y: auto;
-}
-
-
-/* TOMBOL CLOSE */
-
-.modal-close {
-  top: 14px;
-  right: 14px;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 700px) {
-
-  .modal-card {
-    display: block;
-
-    width: 94vw;
-    height: auto;
-    max-height: 92vh;
-
-    overflow-y: auto;
-  }
-
-  .modal-image {
-    height: 45vh;
-    min-height: 280px;
-    max-height: 380px;
-  }
-
-  .modal-info {
-    padding: 25px 20px 25px;
-
-    overflow: visible;
-  }
-}
