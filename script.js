@@ -36,16 +36,29 @@ const products = [
 ];
 
 /* STATE */
+/* STATE */
 const BAG_KEY = "kaileasell_bag";
+const SOLD_KEY = "kaileasell_sold";
+
 let bag = [];
+
+let soldOutIds = [];
+try {
+  soldOutIds = JSON.parse(localStorage.getItem(SOLD_KEY) || "[]");
+} catch (e) {
+  soldOutIds = [];
+}
+
 try {
   const ids = JSON.parse(localStorage.getItem(BAG_KEY) || "[]");
   bag = ids.map(id => products.find(p => p.id === id)).filter(Boolean);
-} catch (e) { bag = []; }
+} catch (e) {
+  bag = [];
+}
+
 let selectedProduct = null;
 let category = "all";
 let lastReceipt = null;
-
 /* HELPERS */
 const $ = id => document.getElementById(id);
 
@@ -81,11 +94,11 @@ function showProducts(list) {
 
   list.forEach(p => {
     const card = document.createElement("article");
-    card.className = "product-card";
+    card.className = `product-card ${soldOutIds.includes(p.id) ? "is-soldout" : ""}`;
     card.innerHTML = `
       <div class="product-image">
         <img src="${IMAGE_BASE + p.image}" alt="${esc(p.name)}" loading="lazy">
-        <span class="product-condition">${esc(p.condition)}</span>
+        <span class="product-condition">${soldOutIds.includes(p.id) ? "SOLD OUT" : esc(p.condition)}</span>
       </div>
       <div class="product-info">
         <span class="product-brand">KAILEASELL</span>
@@ -139,8 +152,17 @@ function openProduct(p) {
   $("modalCondition").textContent = p.condition;
   $("modalNote").textContent = p.note;
   const inBag = bag.some(i => i.id === p.id);
+const isSoldOut = soldOutIds.includes(p.id);
+
+if (isSoldOut) {
+  $("addButton").textContent = "SOLD OUT";
+  $("addButton").disabled = true;
+} else {
   $("addButton").textContent = inBag ? "ALREADY IN YOUR BAG" : "ADD TO BAG";
-  productModal.classList.add("active");
+  $("addButton").disabled = false;
+}
+
+productModal.classList.add("active");
 }
 
 $("addButton").addEventListener("click", () => {
@@ -258,10 +280,21 @@ $("checkoutForm").addEventListener("submit", e => {
     items: bag.slice(),
     total: bagTotal()
   };
+  // Mark purchased products as SOLD OUT
+  bag.forEach(p => {
+    if (!soldOutIds.includes(p.id)) {
+      soldOutIds.push(p.id);
+    }
+  });
+
+  localStorage.setItem(SOLD_KEY, JSON.stringify(soldOutIds));
+
   bag = [];
   updateBagCount();
   $("checkoutForm").reset();
   checkoutModal.classList.remove("active");
+
+  applyFilters();
   showReceipt();
 });
 
