@@ -2449,4 +2449,23 @@ a {
   .about-section h2 {
     font-size: 48px;
   }
+   /* SOLD OUT */
+.is-soldout .product-image {
+  position: relative;
+}
+
+.is-soldout .product-image img {
+  opacity: 0.55;
+}
+
+.is-soldout .product-condition {
+  background: #17131a;
+  color: #fff;
+}
+
+#addButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 }
